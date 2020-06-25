@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ App</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            color: #323232;
+        }
+        #result{
+            border:1px solid blue;
+            border-radius: 20px;
+            padding: 10px;
+            text-align: center;
+            outline: none;
+            box-shadow: 5px 5px 0px greenyellow;
+            font-size: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: green;
+            box-sizing: border-box;
+            
+
+        }
+    </style>
+    <script>
+        function right(){
+            document.getElementById("result").innerHTML="Right answer";
+        }
+        function wrong(){
+            document.getElementById("result").innerHTML="Oops! Wrong answer";
+            result.style = "color: red";
+            
+        }
+    </script>
+</head>
+<body>
+    <h1>FULL FORM OF WHO</h1>
+    <br>
+    <input type="radio" name="answer" value="world health organisation" onclick="right()">world health organisation
+    <br><br>
+
+    <input type="radio" name="answer" value="world health organism" onclick="wrong()">world health organism
+    <br><br>
+
+    <textarea cols="50" rows="5" id="result" placeholder="Answer will be declared here"></textarea>
+</body>
+
+</html>
